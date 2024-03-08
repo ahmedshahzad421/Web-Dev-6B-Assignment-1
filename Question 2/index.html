@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    
+
+    <form id="jobApplicationForm" onsubmit="return validateForm()">
+        <h1 id="title_job_app">Job Application</h1>
+
+        <h2>Personal Information</h2>
+        <div class="names-info">
+            <label for="fname" id="fname">First Name</label>
+            <label for="lname" id="lname">Last Name</label>
+
+            
+            <div>
+                <input type="text" id="input-fname" name="fisrtName" placeholder="John" required>
+                <input type="text" id="input-lname" name="lastName" placeholder="Cena" required>
+            </div>
+            <br></br>
+        </div>
+
+        <div class="contact-info">
+            <label for="phoneNum" id="phoneNum">Phone Number</label>
+            <label for="emaill" id="email">Email Address</label>
+
+            
+            <div>
+                <input type="tel" id="input-phoneNum" name="phoneNum" placeholder="0123-45678945"
+                    pattern="[0-9]{11}" required>
+                <input type="email" id="input-email" name="email" placeholder="johncena@gmail.com" required>
+            </div>
+            <br></br>
+        </div>
+
+        <div class="address-info">
+
+            <div class="address-info-1">
+                <label for="country" id="country">Country</label>
+                <label for="city" id="city">City</label>
+
+                <div>
+
+                    <select id="input-country" name="input-country" required>
+                        <option value="">Select Country</option>
+                        <option value="AF" style="color: black;">Pakistan</option>
+                        <option value="AX" style="color: black;">America</option>
+                        <option value="AL" style="color: black;">India</option>
+                        <option value="DZ" style="color: black;">Russia</option>
+                    </select>
+
+                    <input type="text" id="input-city" name="city" placeholder="New York" required>
+
+                </div>
+
+                <br></br>
+            </div>
+
+            <div class="address-info-2">
+                <label for="street" id="street">Street</label>
+                <div>
+                    <input type="text" id="input-street" name="input-street" placeholder="Street # 9" required>
+                </div>
+                <br></br>
+            </div>
+
+            <div class="address-info-3">
+
+                <label for="state" id="state">State</label>
+                <label for="zipcode" id="zipcode">Zip Code</label>
+                <div>
+                    <input type="text" id="input-state" name="input-state" placeholder="NY" required>
+                    <input type="text" id="input-zipcode" name="input-zipcode" pattern="[0-9]{5}" placeholder="23473"
+                        required>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Resume and Cover Letter</h2>
+        <div>
+
+            <label for="uploadResume" id="uploadResume">Upload Resume</label>
+            <div>
+                <input type="file" id="input-uploadResume" name="Resume" accept=".pdf,.doc,.docx" required>
+            </div>
+            <br></br>
+
+            <label for="coverLetter" id="coverLetter">CoverLetter</label>
+            <div>
+                <textarea id="input-coverLetter" name="coverLetter" rows="7" required></textarea>
+            </div>
+            <br></br>
+
+        </div>
+
+        <h2>Education</h2>
+        <div class="education-info">
+
+            <label for="highestLevel" id="highestLevel">Highest Level of Education Attained</label>
+            <div>
+                <input type="text" id="input-highestLevel" name="input-highestLevel" placeholder="Masters" required>
+
+            </div>
+            <br></br>
+
+
+            <label for="nameSchool" id="nameSchool">Name of School/University</label>
+            <div>
+                <input type="text" id="input-nameSchool" name="input-nameSchool" placeholder="Stanford" required>
+
+            </div>
+            <br></br>
+
+
+            <label for="majorStudy" id="majorStudy">Major/Area of Study</label>
+            <div>
+                <input type="text" id="input-majorStudy" name="input-majorStudy" placeholder="Computer Science" required>
+
+            </div>
+            <br></br>
+
+
+            <label for="graduationYear" id="graduationYear">Graduataion Year</label>
+            <div>
+                <input type="text" id="input-graduationYear" name="input-graduationYear" placeholder="2020" required>
+
+            </div>
+            <br></br>
+
+
+            <label for="employementHistory" id="employementHistory">Employement History</label>
+            <div>
+                <input type="text" id="input-employmentHistory" name="input-employmentHistory" placeholder="Worked at Google"
+                    required>
+
+            </div>
+
+            <br></br>
+
+        </div>
+
+        <h2>Previous Job Titles</h2>
+        <div class="previous-job-titles">
+
+            <label for="companyNames" id="companyNames">Company Names</label>
+            <div>
+                <input type="text" id="input-companyNames" name="input-companyNames" placeholder="Google" required>
+            </div>
+            <br></br>
+
+            <label for="employmentDates" id="employmentDates">Employment Dates</label>
+            <div>
+                <input type="text" id="input-employmentDates" name="input-employmentDates" placeholder="04-06-2021 to 09-12-2023" required>
+            </div>
+            <br></br>
+
+
+            <label for="jobResponsibilities" id="jobResponsibilities">Job Responsibilities</label>
+            <div>
+                <input type="text" id="input-jobResponsibilities" name="input-jobResponsibilities" placeholder="SOC Analyst"
+                    required>
+            </div>
+            <br></br>
+
+
+        </div>
+
+        <h2>Skills</h2>
+
+        <div class="skills">
+
+            <label for="relevantSkills" id="relevantSkills">Relevant Skills</label>
+            <div>
+                <textarea id="input-relevantSkills" name="input-relevantSkills" rows="7" required> </textarea>
+            </div>
+
+            <br></br>
+
+            <label for="certifications" id="certifications">Certifications</label>
+            <div>
+                <input type="file" id="input-certifications" name="input-certifications" accept=".pdf,.doc,.docx"
+                    required>
+            </div>
+
+            <br></br>
+
+        </div>
+
+        <h2>Availability</h2>
+
+        <div class="availability">
+
+            <label for="startDate">Start Date</label>
+            <label for="relocate" id="relocate">Willingness to Relocate</label>
+            <div>
+
+                <input type="date" id="input-startDate" name="input-startDate" required>
+
+                <select id="input-relocate" name="input-relocate" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <br></br>
+
+            <label for="workSchedule" style="margin-top: 10%;">Work Schedule</label>
+            <div>
+
+                <input type="text" id="input-workSchedule" name="input-workSchedule"
+                    placeholder="Preferred Work Schedule" required>
+            </div>
+            <br></br>
+
+        </div>
+
+        <h2>References</h2>
+        <div class="references">
+
+            <label for="referenceName" id="referenceName">Reference Name</label>
+            <label for="referenceContact" id="referenceContact">Reference Contact</label>
+
+
+           
+            <div>
+                <input type="text" id="input-referenceName" name="input-referenceName" placeholder="Alex" required>
+                <input type="tel" id="input-referenceContact" name="input-referenceContact" placeholder="0312-456789"
+                    pattern="[0-9]{11}" required>
+
+            </div>
+            <br></br>
+
+            <label for="referenceRelationship" id="referenceRelationship">Relationship with Applicant</label>
+            <div>
+                <input type="text" id="input-referenceRelationship" name="input-referenceRelationship"
+                    placeholder="Relative" required>
+            </div>
+            <br></br>
+
+        </div>
+
+        <h2>Additional Questions</h2>
+        <div class="additional">
+            <label for="work">Why do you want to work for this company?</label>
+            <div>
+                <textarea id="input-work" name="input-work" rows="3"> </textarea>
+            </div>
+            <br></br>
+        </div>
+
+
+        <div class="consent">
+            <div>
+                <label for="termsCheckbox"> I agree to terms and conditions</label>
+                <input type="checkbox" id="termsCheckbox" required>
+                
+            </div>
+
+            <br></br>
+
+            <div>
+                <label for="privacyCheckbox"> I acknowledge my privacy policy</label>
+                <input type="checkbox" id="privacyCheckbox" required>
+                
+            </div>
+
+        </div>
+
+        <div class="btn">
+            <button type="submit" class="next" id="subButton">Submit Application</button>
+            <button id="viewAsTableBtn">View Applications as Table</button>
+        </div>
+
+        <table id="applicationsTable" style="display:none;">
+            
+        </table>
+
+
+    </form>
+
+
+
+
+</body>

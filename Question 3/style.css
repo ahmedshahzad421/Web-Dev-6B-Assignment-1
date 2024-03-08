@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: #e9ecef; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #343a40; 
+}
+
+.navbar-nav .nav-link {
+    color: #343a40; 
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+section.hero {
+    padding: 100px 0;
+    background-color: #f8f9fa; 
+    color: #343a40;
+}
+section.services {
+    padding: 100px 0;
+    background-color: #28a745; 
+    color: #fff; 
+}
+
+footer {
+    background-color: #343a40; 
+    color: #fff; 
+    padding: 50px 0;
+}
+.img-fluid {
+    margin-top: 5%;
+    max-width: 100%;
+    max-height: 200px; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

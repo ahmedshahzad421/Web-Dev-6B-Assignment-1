@@ -1,0 +1,308 @@
+body {
+
+    font-family: Arial, sans-serif;
+    background-image:url(image3.jpg);
+    background-size: contain;
+
+    font-size:16px;
+   
+}
+
+form {
+
+    display: table;
+    margin: 0 auto;
+    border: 5px black solid;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 800px;
+    backdrop-filter: blur(10px);
+    
+}
+
+h1,
+h2 {
+    background-color: #665bff;
+    text-align: center;
+
+}
+
+#fname {
+
+    margin-top:200px;
+
+}
+
+#input-fname {
+
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 40%;
+    margin-top:15px;
+}
+
+#lname {
+
+    margin-left:275px;
+    
+}
+
+#input-lname {
+
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 45%;
+    margin-top:15px;
+}
+
+#phoneNum{
+
+}
+#input-phoneNum{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 40%;
+
+    margin-top:10px;
+}
+
+#email{
+    margin-left:245px;
+
+
+}
+#input-email{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 45%;
+    margin-top:10px;
+
+}
+
+#country{
+
+}
+#input-country{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 43.5%;
+    margin-top:10px;
+}
+
+#city{
+    margin-left:295px;
+}
+#input-city{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 45%;
+    margin-top:10px;
+}
+
+#street{
+   
+}
+#input-street{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 89%;
+    margin-top:10px;
+}
+#state{
+   
+}
+#input-state{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 40%;
+    margin-top:10px;
+}
+
+#zipcode{
+   margin-left:315px;
+}
+#input-zipcode{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 45%;
+    margin-top:10px;
+}
+#uploadResume{
+   
+}
+#input-uploadResume{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 89%;
+    margin-top:10px;
+}
+
+#street{
+   
+}
+#input-coverLetter{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 89%;
+    margin-top:10px;
+}
+
+#street{
+   
+}
+#input-street{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 89%;
+    margin-top:10px;
+}
+
+#input-highestLevel,
+#input-nameSchool,
+#input-majorStudy{
+
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 89%;
+    margin-top:10px;
+
+}
+
+#input-graduationYear{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 30%;
+    margin-top:10px;
+}
+#input-employmentHistory{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 89%;
+    margin-top:10px;
+
+}
+
+#input-companyNames,#input-employmentDates,#input-jobResponsibilities{
+
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 89%;
+    margin-top:10px;
+
+}
+
+#input-relevantSkills,#input-certifications{
+
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 89%;
+    margin-top:10px;
+
+}
+
+#input-startDate{
+
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 40%;
+    margin-top:10px;
+
+}
+
+#relocate{
+    margin-left:280px;
+
+}
+
+#input-relocate{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 45%;
+    margin-top:10px;
+}
+#input-workSchedule{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 89%;
+    margin-top:10px;
+}
+
+#input-referenceName{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 40%;
+    margin-top:10px;
+
+}
+
+#referenceContact{
+    margin-left:234px;
+}
+
+#input-referenceContact{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 45%;
+    margin-top:10px;
+
+}
+
+#input-referenceRelationship{
+
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 89%;
+    margin-top:10px;
+}
+#input-work{
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 6px 12px;
+    width: 89%;
+    margin-top:10px;
+}
+.consent{
+    margin-left:250px;
+}
+
+#subButton{
+
+    margin-top:30px;
+    margin-left:200px;
+    padding:6px 12px;
+    border-radius: 4px;
+    border: 2px black solid;
+
+}
+
+#viewAsTableBtn{
+    margin-top:20px;
+    margin-left:40px;
+    padding:6px 12px;
+    border-radius: 4px;
+    border: 2px black solid;
+
+}
